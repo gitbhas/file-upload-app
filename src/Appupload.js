@@ -26,7 +26,7 @@ function Appupload() {
       Body: selectedFile,
       ACL: 'public-read',
     };
-
+    
     s3.upload(params, (err, data) => {
       if (err) {
         console.error('Upload error:', err);
