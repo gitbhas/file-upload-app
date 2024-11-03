@@ -28,12 +28,12 @@ jobs:
 
       - name: Debug Environment Variables
         run: |
-          echo "AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}"
+          echo "ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}"
+          echo "SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}"
 
       - name: Deploy to Amplify
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+          ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+          SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
           AWS_SDK_LOAD_CONFIG: 1  # Add this line
-        run: amplify publish --accessKeyId $AWS_ACCESS_KEY_ID --secretAccessKey $SECRET_ACCESS_KEY
+        run: amplify publish --accessKeyId $ACCESS_KEY_ID --secretAccessKey $SECRET_ACCESS_KEY
