@@ -25,11 +25,13 @@ Amplify.configure(awsExports);
 global.Buffer = Buffer;
 
 function App() {
+  const pageTitle = "Welcome to 30 Days of Amplify";
   return (
     <div className="App">
       <Authenticator>
         {({ signOut }) => (
           <main>
+              <h1>{pageTitle}</h1>
             <header className='App-header'>
               <Appupload/>
               <button 
