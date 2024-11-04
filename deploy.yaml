@@ -26,7 +26,10 @@ jobs:
 
       - name: Install AWS Amplify CLI
         run: npm install -g @aws-amplify/cli
-
+             echo $PATH
+             amplify init --yes
+             amplify --version
+             
       - name: Install dependencies
         run: npm install
 
