@@ -20,9 +20,9 @@ function Appupload() {
     }
 
     const params = {
-      Bucket: 'react-fileupload',
+      Bucket: 'react-file-upload-amplify',
      // Key: 'folderName/' + selectedFile.name,
-      Key: 'file.pdf',
+      Key: 'eCard.pdf',
       Body: selectedFile,
       ACL: 'public-read',
     };
