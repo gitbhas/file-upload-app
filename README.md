@@ -114,3 +114,7 @@ c. Edit the CORS policy and add the below one to specify which origins (domains)
     }
 ]
 ```
+If you want to publish in cloud, following commands
+- amplify push
+- amplify add hosting
+- amplify publish
