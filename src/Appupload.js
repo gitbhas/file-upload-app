@@ -20,9 +20,9 @@ function Appupload() {
     }
 
     const params = {
-      Bucket: 'react-file-upload-amplify',
-     // Key: 'folderName/' + selectedFile.name,
-      Key: 'eCard.pdf',
+      Bucket: 'ddps-v4nprd-s301-tmp',
+      Key: 'TEST/' + selectedFile.name,
+      //Key: 'TEST/eCard.pdf',
       Body: selectedFile,
       ACL: 'public-read',
     };
